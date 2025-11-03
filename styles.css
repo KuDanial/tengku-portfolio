@@ -378,8 +378,15 @@ body {
 }
 
 /* Timetable Table - HTML table layout for weekly schedule */
+.timetable-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .timetable-table {
   width: 100%;
+  min-width: 800px;
   border-collapse: collapse;
   background: #fff;
   border: 1px solid #DAD7D7;
@@ -628,6 +635,7 @@ body {
   text-align: middle;
   margin-bottom: 20px;
 }
+
 /* Print Media Query - Removes shadow when printing */
 @media print {
   .container {
@@ -656,5 +664,38 @@ body {
   }
   .resume-header img {
     display: none;
+  }
+
+  /* adjust time table for mobile */
+  .timetable-title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .timetable-container {
+    padding: 20px;
+  }
+
+  .time-header,
+  .day-header {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .time-slot {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .course-cell {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 6px;
+  }
+
+  /* Optional: reduce shadow and roundness for smaller devices */
+  .timetable-container {
+    box-shadow: none;
+    border-radius: 0;
   }
 }
