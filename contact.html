@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Tengku Ahmad Danial</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="navbar-left brand">
+        <a href="main.html" class="brand-name">Tengku's Portfolio</a>
+      </div>
+      <div class="navbar-right">
+        <a href="main.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html" class="enq-btn">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Form -->
+  <div class="content-wrapper">
+    <div class="container">
+      <div class="section">
+        <div class="contactme-title">Contact Me</div>
+        <hr>
+
+        <form class="contact-form">
+          <!-- Name -->
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+          <!-- Email -->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <!-- Subject -->
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Your subject">
+
+          <!-- Inquiry Type -->
+          <p><strong>Inquiry Type:</strong></p>
+          <label><input type="radio" name="inquiry" value="project"> Project Inquiry</label>
+          <label><input type="radio" name="inquiry" value="job-offer"> Job Offer</label>
+          <label><input type="radio" name="inquiry" value="other"> Other</label>
+
+          <!-- Services Interest -->
+          <p><strong>Services Interested In:</strong></p>
+          <label><input type="checkbox" name="service" value="web-dev"> Web Development</label>
+          <label><input type="checkbox" name="service" value="design"> Graphic Design</label>
+          <label><input type="checkbox" name="service" value="marketing"> Digital Marketing</label>
+
+          <!-- Message -->
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+          <!-- Submit -->
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Tengku Ahmad Danial Bin Tengku Noor Ashraf. All rights reserved.</p>
+    <p>Built with HTML, CSS, and Bootstrap Icons</p>
+  </footer>
+</body>
+</html>

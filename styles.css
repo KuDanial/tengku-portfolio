@@ -1,0 +1,660 @@
+/* External Fonts - Google Fonts and Bootstrap Icons */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+/* Global Reset - Removes default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%; 
+}
+
+/* Body Styling - Main background and typography settings */
+body {
+  min-height: 100%;  
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Wrapper - Ensures footer stays at bottom */
+.content-wrapper {
+  flex: 1;
+  min-height: calc(100vh - 150px);
+  padding-bottom: 50px;
+}
+
+/* Main Container - White resume card with shadow effect */
+.container {
+  max-width: 700px;   
+  background: #fff;
+  margin: 0px auto 0px; 
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 50px;
+}
+
+/* Site Header - Website header with navigation */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Bar - Horizontal layout with links on left, login on right */
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #54AFE4;
+  text-decoration: none;
+}
+
+.brand-name:hover {
+  color: #333;
+}
+
+.navbar-right a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  transition: color 0.3s;
+  padding: 5px 10px;
+}
+
+.navbar-right a:hover {
+  color: #54AFE4;
+}
+
+.enq-btn {
+  color: #54AFE4;
+  font-weight: 700;
+}
+
+/* =========================
+   PERSONAL SECTION STYLING
+========================= */
+
+.personal-section .section__title {
+  margin-top: 40px;
+  letter-spacing: 2px;
+  color: #54AFE4;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.personal-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.personal-photo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.family-photo {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.family-photo:hover {
+  transform: scale(1.02);
+}
+
+.family-photo-caption {
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Site Footer - Website footer section */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #DAD7D7;
+  margin-top: 50px;
+  padding: 30px 40px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+/* Resume Header Section - Flexbox layout for profile image and info */
+.resume-header {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header-content {
+  flex: 1;
+}
+  
+.full-name {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #54AFE4;
+}
+
+.first-name {
+  font-weight: 700;
+}
+
+.last-name {
+  font-weight: 300;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.email ,
+.phone {
+  color: #999;
+  font-weight: 300;
+} 
+
+.separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+
+/* Social Media Icons - Flexbox for horizontal layout */
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-media a {
+  color: #54AFE4;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-media span {
+  font-size: 14px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+/* Details Section - Main content area for resume sections */
+.details {
+  line-height: 20px;
+}
+
+.details .section {
+  margin-bottom: 40px;  
+}
+
+.details .section:last-of-type {
+  margin-bottom: 0px;  
+}
+
+.details .section__title {
+  letter-spacing: 2px;
+  color: #54AFE4;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.details .section__list-item {
+  margin-bottom: 30px;
+}
+
+.details .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.details .left,
+.details .right {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.details .left {
+  width: 100%;    
+}
+
+.details .right {
+  text-align: left;
+  width: 0;    
+}
+
+.details .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details .position-title {
+  font-weight: bold;
+  color: #54AFE4;
+  margin-bottom: 8px;
+}
+
+.details .company-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details .duration {
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.details .addr {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.details a {
+  text-decoration: none;
+  color: #54AFE4;
+  font-style: normal;
+} /* make the hyperlink inside resume for soniscsytemsolution has no underline and different color */
+
+.details a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.details .desc {
+  margin-top: 8px;
+  line-height: 22px;
+}
+
+/* List Styling - Maintains same visual appearance as bullet symbols */
+.details .desc ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.details .desc ul li {
+  margin-bottom: 0;
+  line-height: 22px;
+}
+
+.details .text {
+  line-height: 22px;
+  margin-top: 5px;
+}
+
+.details .skills__item {
+  margin-bottom: 10px;  
+}
+
+/* =========================
+   TIMETABLE PAGE STYLING
+========================= */
+/*
+/* Timetable Container - Full-width layout for timetable grid */
+.timetable-container {
+  max-width: 1400px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+}
+
+.timetable-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.timetable-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #54AFE4;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: middle;
+  margin-bottom: 20px;
+}
+
+/* Timetable Table - HTML table layout for weekly schedule */
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #DAD7D7;
+  overflow-x: auto;
+  table-layout: fixed;
+}
+
+.timetable-table th,
+.timetable-table td {
+  border: 1px solid #DAD7D7;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* Time Header and Day Headers */
+.time-header {
+  background: #54AFE4;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  width: 100px;
+}
+
+.day-header {
+  background: #54AFE4;
+  padding: 15px 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+
+/* Time Slots - Left column showing times */
+.time-slot {
+  background: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  font-weight: 300;
+  min-height: 30px;
+  width: 100px;
+}
+
+/* Time Cells - Individual table cells */
+.time-cell {
+  background: #fff;
+  min-height: 80px;
+  height: 80px;
+  width: auto;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Course Cells - Styled table cells for courses */
+.course-cell {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #222;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 10px 8px;
+}
+
+.course-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.course-cell strong {
+  font-weight: 700;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Course Color Schemes - Matching the timetable colors */
+.course-tmc451 {
+  background: #ff9999;
+}
+
+.course-isp640 {
+  background: #ffeb99;
+}
+
+.course-ict550 {
+  background: #99ffcc;
+}
+
+.course-ctu554 {
+  background: #ffcc99;
+}
+
+.course-ict552 {
+  background: #cc99ff;
+}
+
+.course-isp550 {
+  background: #80e5d4;
+}
+
+.course-isp {
+  background: #80e5d4;
+}
+
+.course-csc584 {
+  background: #ff99cc;
+}
+
+.course-lcc500 {
+  background: #99ffcc;
+}
+
+/* =========================
+   PROJECT PAGE STYLING
+========================= */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #dad7d7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #54AFE4;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.project-link {
+  text-decoration: none;
+  background: #54AFE4;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background: #333;
+  color: #fff;
+}
+
+
+/* =========================
+   CONTACT FORM STYLING
+========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #dad7d7;
+  border-radius: 4px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #54AFE4;
+  outline: none;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+  margin-right: 8px;
+}
+
+.submit-btn {
+  background: #54AFE4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Lato', sans-serif;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
+.projects-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #54AFE4;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: middle;
+  margin-bottom: 20px;
+}
+
+.contactme-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #54AFE4;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: middle;
+  margin-bottom: 20px;
+}
+/* Print Media Query - Removes shadow when printing */
+@media print {
+  .container {
+    box-shadow: none;
+  }
+  
+  .timetable-container {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-right {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .brand-name {
+    font-size: 18px;
+  }
+  .resume-header img {
+    display: none;
+  }
+}
