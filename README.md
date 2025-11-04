@@ -30,15 +30,14 @@ The website highlights my experience in **web development, UI/UX design, and dig
 ## 📁 Project Structure
 
 tengku-portfolio/
-│
-├── main.html           # Home page
-├── resume.html         # Resume page
-├── timetable.html      # Class timetable
-├── project.html        # Project showcase
-├── contact.html        # Contact form
-├── styles.css          # Main stylesheet
-├── myprofileimage.png  # Profile image
-└── familyphoto.jpg     # Personal family photo
+main.html           # Home page
+resume.html         # Resume page
+timetable.html      # Class timetable
+project.html        # Project showcase
+contact.html        # Contact form
+styles.css          # Main stylesheet
+myprofileimage.png  # Profile image
+familyphoto.jpg     # Personal family photo
 
 
 ---
@@ -62,5 +61,6 @@ It was fully developed, designed, and hosted by **Tengku Ahmad Danial** during m
 ---
 
 🖥️ *“Built with passion for learning, design, and technology.”*
+
 
 
